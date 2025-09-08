@@ -1,0 +1,19 @@
+Package: freelapanalysis
+Title: Summarise freelap time data
+Version: 0.0.0.9000
+Authors@R: 
+    person("Anton", "Kalén", , "anton.kalen@sok.se", role = c("aut", "cre"))
+Description: Takes lap time data from freelap and summarises for each athlete. Gives the average lab speed and compares to the best athlete.
+License: What license is it under?
+Imports: 
+    config,
+    golem,
+    shiny
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: 
+    spelling,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US

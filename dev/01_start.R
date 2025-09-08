@@ -23,9 +23,9 @@ golem::fill_desc(
   pkg_title = "Summarise freelap time data", # What the Package Does (One Line, Title Case, No Period)
   pkg_description = "Takes lap time data from freelap and summarises for each athlete. Gives the average lab speed and compares to the best athlete.", # What the package does (one paragraph).
   authors = person(
-    given = "AUTHOR_FIRST", # Your First Name
-    family = "AUTHOR_LAST", # Your Last Name
-    email = "AUTHOR@MAIL.COM", # Your email
+    given = "Anton", # Your First Name
+    family = "Kalén", # Your Last Name
+    email = "anton.kalen@sok.se", # Your email
     role = c("aut", "cre") # Your role (here author/creator)
   ),
   repo_url = NULL, # The URL of the GitHub repo (optional),
@@ -65,7 +65,7 @@ usethis::use_git()
 ## Sets the remote associated with 'name' to 'url'
 usethis::use_git_remote(
   name = "origin",
-  url = "https://github.com/<OWNER>/<REPO>.git"
+  url = "https://github.com/antonkalen/freelapanalysis.git"
 )
 
 # You're now set! ----

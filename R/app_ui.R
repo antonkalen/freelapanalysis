@@ -9,8 +9,32 @@ app_ui <- function(request) {
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # Your application UI logic
-    fluidPage(
-      golem::golem_welcome_page() # Remove this line to start building your UI
+    bslib::page_navbar(
+      title = "Freelap analysis",
+      theme = bslib::bs_theme(),
+      fillable = FALSE,
+      bslib::nav_panel(
+        "Edit data",
+        bslib::layout_sidebar(
+          sidebar = bslib::sidebar(),
+          fluidRow(column(width = 12))
+        )
+      ),
+      bslib::nav_panel(
+        "Output",
+        bslib::layout_sidebar(
+          sidebar = bslib::sidebar(),
+          fluidRow(column(
+            width = 12,
+            bslib::navset_tab(
+              bslib::nav_panel("Men"),
+              bslib::nav_panel("Women"),
+              bslib::nav_spacer(),
+              bslib::nav_item()
+            )
+          ))
+        )
+      )
     )
   )
 }

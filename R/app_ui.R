@@ -19,7 +19,7 @@ app_ui <- function(request) {
           sidebar = bslib::sidebar(
             mod_upload_ui("upload_1"),
           ),
-          fluidRow(column(width = 12))
+          fluidRow(column(width = 12, mod_data_editor_ui("data_editor_1")))
         )
       ),
       bslib::nav_panel(

@@ -10,4 +10,5 @@ app_server <- function(input, output, session) {
 
   # Your application server logic
   mod_upload_server("upload_1", reactives = reactives)
+  mod_data_editor_server("data_editor_1", reactives = reactives)
 }

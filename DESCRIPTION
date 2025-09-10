@@ -11,6 +11,7 @@ BugReports: https://github.com/antonkalen/freelapanalysis/issues
 Imports: 
     bslib,
     config,
+    DataEditR,
     dplyr,
     golem,
     readr,

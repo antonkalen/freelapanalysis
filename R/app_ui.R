@@ -16,7 +16,9 @@ app_ui <- function(request) {
       bslib::nav_panel(
         "Edit data",
         bslib::layout_sidebar(
-          sidebar = bslib::sidebar(),
+          sidebar = bslib::sidebar(
+            mod_upload_ui("upload_1"),
+          ),
           fluidRow(column(width = 12))
         )
       ),

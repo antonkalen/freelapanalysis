@@ -11,8 +11,12 @@ BugReports: https://github.com/antonkalen/freelapanalysis/issues
 Imports: 
     bslib,
     config,
+    dplyr,
     golem,
-    shiny
+    readr,
+    shiny,
+    stringr,
+    tidyselect
 Suggests: 
     spelling,
     testthat (>= 3.0.0)

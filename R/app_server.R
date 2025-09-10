@@ -5,5 +5,9 @@
 #' @import shiny
 #' @noRd
 app_server <- function(input, output, session) {
+  # Initialize reactive values
+  reactives <- reactiveValues()
+
   # Your application server logic
+  mod_upload_server("upload_1", reactives = reactives)
 }

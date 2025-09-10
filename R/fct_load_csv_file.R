@@ -12,7 +12,7 @@ load_csv_file <- function(file) {
 
   readr::read_csv2(file, skip = skip_rows) |>
     dplyr::filter(!is.na(SPLIT)) |>
-    dplyr::select(-LAP, -starts_with('SPLIT')) |>
+    dplyr::select(-LAP, -tidyselect::starts_with('SPLIT')) |>
     dplyr::select(
       sex = 2,
       id = 4,
@@ -20,5 +20,5 @@ load_csv_file <- function(file) {
       Loops = 1,
       tidyselect::everything()
     ) |>
-    dplyr::mutate(across(where(is.numeric), \(x) round(x)))
+    dplyr::mutate(dplyr::across(tidyselect::where(is.numeric), \(x) round(x)))
 }
